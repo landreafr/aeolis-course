@@ -24,8 +24,7 @@
       threshold_mask = ../../data/bathy/coarse/threshold.txt
            tide_file = ../../data/bc/tide_constant.txt
                tstop = 315576000.000000
-           wave_file = ../../data/bc/waves_none.txt
-          waves_file = ../../data/bc/waves_constant.txt
+           wave_file = ../../data/bc/waves_constant.txt
            wind_file = ../../data/bc/wind_constant.txt
           xgrid_file = ../../data/bathy/coarse/x.txt
           ygrid_file = ../../data/bathy/coarse/y.txt
