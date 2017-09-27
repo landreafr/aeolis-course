@@ -41,7 +41,7 @@ def plot_bathymetry(ncfile, change=False, figsize=(10,5), time_index=-1, ax=None
         x = ds.variables['x'][:,:]
         y = ds.variables['y'][:,:]
         zb = ds.variables['zb'][...]
-        pickup = ds.variables['pickup.sum'][...]
+        pickup = ds.variables['pickup'][...]
         
         # create figure
         if ax is None:
@@ -98,7 +98,7 @@ def plot_erosion(ncfile, figsize=(10,4), ax=None):
         x = ds.variables['x'][:,:]
         y = ds.variables['y'][:,:]
         t = ds.variables['time'][:]
-        pickup = ds.variables['pickup.sum'][...]
+        pickup = ds.variables['pickup'][...]
         
         dx = np.diff(x[0,:])[0] # assume equidistant grid
         dy = np.diff(y[:,0])[0] # assume equidistant grid
