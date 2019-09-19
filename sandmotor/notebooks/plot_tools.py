@@ -69,7 +69,7 @@ def plot_bathymetry(ncfile, change=False, figsize=(10,5), time_index=-1, ax=None
         ax.set_ylabel('cross-shore distance [m]')
 
     return ax
-
+plot_bathymetry('configfile.nc') 
 
 def plot_erosion(ncfile, figsize=(10,4), ax=None):
     '''Plot erosion in time from an AeoLiS result file
@@ -128,7 +128,7 @@ def plot_erosion(ncfile, figsize=(10,4), ax=None):
         ax.grid(True)
             
     return ax
-
+plot_erosion('configfile.nc') 
 
 def plot_erosion_multi(ncfiles, ax=None, **kwargs):
     '''Plot erosion in time from multiple AeoLiS result files
